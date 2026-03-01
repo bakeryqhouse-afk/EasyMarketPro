@@ -16,18 +16,10 @@ export function ChatKitPanel() {
     startScreen: {
       greeting: "EasyMarketPro Customer Assistant",
     },
-    theme: {
-      colorScheme: "dark",
-      color: {
-        accent: {
-          primary: "#B8985F",
-        },
-      },
-    },
   });
 
   return (
-    <div className="flex h-[90vh] w-full rounded-2xl shadow-sm transition-colors">
+    <div className="flex h-[90vh] w-full rounded-2xl bg-white shadow-sm transition-colors dark:bg-slate-900">
       <ChatKit control={chatkit.control} className="h-full w-full" />
     </div>
   );
